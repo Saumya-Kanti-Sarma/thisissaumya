@@ -1,9 +1,15 @@
 import React from 'react'
-import styles from "./styles.module.css"
+import "./Home.css"
 const Home = () => {
   return (
-    <div className='base-divs'>
-      hello this is Home
+    <div className='base-divs Home'>
+      <section className="wordsHolder">
+        <h1>MY</h1>
+        <h1>PORTFOLIO</h1>
+        <p>WEBSITE</p>
+
+      </section>
+      <button className='HomeNavigateDown'>↓</button>
     </div>
   )
 }
