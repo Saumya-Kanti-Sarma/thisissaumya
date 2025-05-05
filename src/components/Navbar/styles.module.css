@@ -1,0 +1,125 @@
+.nav {
+  position: absolute;
+  /* background-color: var(--black); */
+  width: calc(100vw - 100px);
+  max-width: 1500px;
+  height: 70px;
+  top: 6%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  z-index: 100;
+}
+
+.indBtn1,
+.indBtn2,
+.indBtn3,
+.navSection button {
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.indBtn1,
+.indBtn2,
+.indBtn3 {
+  background-color: var(--black);
+  border: none;
+  border-radius: 12px;
+  color: var(--white);
+  padding: 5px;
+  width: 100px;
+}
+
+.navSection {
+  flex: 1;
+  background-color: var(--black);
+  border: none;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navSection button {
+  border: none;
+  color: var(--white);
+  height: 100%;
+  padding: 0 10px;
+  transition: 0.22s ease-in-out;
+  background: transparent;
+}
+
+.navSection button:hover {
+  /* background-color: #ffffff3d; */
+  font-weight: 800;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  color: var(--pink);
+}
+
+.indBtn3 {
+  display: none;
+}
+
+.menu {
+  position: absolute;
+  background-color: var(--black);
+  width: 200px;
+  height: calc(100vh - 70px);
+  top: 83px;
+  right: -100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  justify-content: start;
+  display: none;
+  transition: 0.22s ease-in-out;
+  z-index: 100;
+}
+
+.menu button {
+  background-color: transparent;
+  color: var(--white);
+  font-size: 1.2rem;
+  padding: 10px 0;
+  border: none;
+  transition: 0.22s ease-in-out;
+}
+
+.menu button:hover {
+  background-color: #ffffff33;
+}
+
+@media (max-width: 590px) {
+  .nav {
+    width: calc(100vw - 10px);
+    top: 5%;
+  }
+
+  .menu {
+    display: flex;
+  }
+
+  .navSection,
+  .indBtn2 {
+    display: none;
+  }
+
+  .indBtn3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 70px;
+  }
+
+  .indBtn1 {
+    flex: 1;
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 450px) {}
