@@ -18,14 +18,9 @@ const Navbar = () => {
       top: scrollPosition,
       behavior: 'smooth'
     });
+    setMenu(() => menu == "5px" ? "-100%" : "-100%")
   }
 
-  useEffect(() => {
-    function handleCloseMenu(event) {
-      if (menu == "5px") handleMenuToggle();
-    };
-    document.addEventListener("mousedown", handleCloseMenu)
-  }, [menu]);
   return (
     <>
       <nav className={styles.nav}>
@@ -47,10 +42,15 @@ const Navbar = () => {
         </button>
       </nav>
       <div className={styles.menu} style={{ right: `${menu}` }}>
-        <button onClick={() => handleScrolling(1, 100)}>Meet Saumya</button>
-        <button onClick={() => handleScrolling(2, 200)}>Blogs</button>
-        <button onClick={() => handleScrolling(3, 300)}>Heros</button>
-        <button onClick={() => handleScrolling(4, 400)}>Social Media</button>
+        <button
+          onClick={handleMenuToggle}
+          className={styles.menuCrossBtn}>
+          <img src={`/icons/cross.svg`} />
+        </button>
+        <button className={styles.menuBtn} onClick={() => handleScrolling(1, 100)}>Meet Saumya</button>
+        <button className={styles.menuBtn} onClick={() => handleScrolling(2, 200)}>Blogs</button>
+        <button className={styles.menuBtn} onClick={() => handleScrolling(3, 300)}>Heros</button>
+        <button className={styles.menuBtn} onClick={() => handleScrolling(4, 400)}>Social Media</button>
       </div>
     </>
   )
