@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from './components/Navbar/Navbar'
 import Home from "./pages/Home/Home.jsx";
 import MeetSaumya from "./pages/MeetSaumya/MeetSaumya.jsx";
-import Blogs from "./pages/Blogs/Blogs.jsx";
+import Projects from "./pages/Projects/Projects.jsx";
 import Heros from "./pages/Heros/Heros.jsx";
 const App = () => {
   return (
@@ -10,7 +10,7 @@ const App = () => {
       <Navbar />
       <Home />
       <MeetSaumya />
-      <Blogs />
+      <Projects />
       <Heros />
 
     </main>

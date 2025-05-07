@@ -1,0 +1,159 @@
+.mainContainer {
+  height: 80%;
+  width: calc(100vw - 100px);
+  max-width: 1500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+  margin: 0 auto;
+}
+
+.image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.image img {
+  width: 70%;
+  aspect-ratio: 4/5;
+  min-width: 300px;
+  object-fit: cover;
+  border-radius: 12%;
+}
+
+.textArea {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 60%;
+}
+
+.image,
+.top {
+  transition: 0.22s ease-in-out;
+}
+
+.top h1 {
+  font-size: 75px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.top p {
+  font-size: 35px;
+}
+
+.bottom {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.bottom button {
+  background: transparent;
+  border: none;
+  font-size: 25px;
+  cursor: pointer;
+  color: #c4c4c4;
+  transition: 0.12s ease-in-out;
+}
+
+.bottom button:hover {
+  transform: scale(1.5);
+  color: #000;
+}
+
+.navigateDown {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.navigationDown {
+  background-color: var(--black);
+  border: none;
+  padding: 10px 15px;
+  color: var(--white);
+  border-radius: 100%;
+  font-size: 1.4rem;
+  margin: 0 auto;
+  margin-bottom: 200px;
+  cursor: pointer;
+  transition: 0.22s ease-in-out;
+
+}
+
+
+
+
+
+/* Media Querry */
+
+@media (max-width: 1060px) {
+
+  .top h1 {
+    font-size: 55px;
+  }
+
+  .top p {
+    font-size: 25px;
+  }
+}
+
+
+@media (max-width: 820px) {
+  .mainContainer {
+    gap: 40px;
+  }
+
+  .top h1 {
+    font-size: 45px;
+  }
+
+  .top p {
+    font-size: 20px;
+  }
+}
+
+
+@media (max-width: 580px) {
+  .mainContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .top {
+    justify-content: start;
+  }
+
+  .top h1 {
+    font-size: 30px;
+  }
+
+  .top p {
+    font-size: 16px;
+  }
+
+  .image img {
+    width: 70%;
+    min-width: 230px;
+    object-fit: cover;
+    border-radius: 12%;
+  }
+
+  .navigationDown {
+    padding: 10px 14px;
+    border-radius: 100%;
+    font-size: 1rem;
+
+  }
+
+
+}
