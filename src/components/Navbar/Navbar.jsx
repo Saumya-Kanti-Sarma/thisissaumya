@@ -48,7 +48,7 @@ const Navbar = () => {
           <img src={`/icons/cross.svg`} />
         </button>
         <button className={styles.menuBtn} onClick={() => handleScrolling(1, 100)}>Meet Saumya</button>
-        <button className={styles.menuBtn} onClick={() => handleScrolling(2, 200)}>Blogs</button>
+        <button className={styles.menuBtn} onClick={() => handleScrolling(2, 200)}>Projects</button>
         <button className={styles.menuBtn} onClick={() => handleScrolling(3, 300)}>Heros</button>
         <button className={styles.menuBtn} onClick={() => handleScrolling(4, 400)}>Social Media</button>
       </div>
